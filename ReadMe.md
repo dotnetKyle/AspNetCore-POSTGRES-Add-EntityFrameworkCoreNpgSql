@@ -38,9 +38,9 @@ Using POSTGRESQL with ASP.NET Core
 > * Click "Manage User Secrets".
 > * Add the following code into the User Secrets file:
 
-			{
-			  "DefaultConnection": "Server=localhost;Database=MyDatabaseName;username=MyUserName;password=p@ssw0rd"
-			}
+	{
+		"DefaultConnection": "Server=localhost;Database=MyDatabaseName;username=MyUserName;password=p@ssw0rd"
+	}
 
 > * Replace "MyDatabaseName" with the name of your database.
 > * Also, replace "MyUserName", and "p@ssw0rd"
