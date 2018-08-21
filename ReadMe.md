@@ -45,3 +45,15 @@ Using POSTGRESQL with ASP.NET Core
 > * Replace "MyDatabaseName" with the name of your database.
 > * Also, replace "MyUserName", and "p@ssw0rd"
 
+> **Add the Entity Framework changes to your database:**
+
+> * In the directory with your project, run the following console command:
+
+	dotnet ef migrations add InitialCreate
+
+>   *Now your database is prepared to push up to the POSTGRES database..*
+> * Now run the following console command:
+
+	dotnet ef database update
+	
+>   *Now your database should be updated with the changes.*
