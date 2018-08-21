@@ -29,7 +29,7 @@ Using POSTGRESQL with ASP.NET Core
 	services
 		.AddEntityFrameworkNpgsql()
 		.AddDbContext<ApplicationDbContext>(options =>
-			options.UseNpgsql(Configuration["DefaultConnection"])
+			options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"))
 		);
 
 > * Remove the connection string out of app settings.
